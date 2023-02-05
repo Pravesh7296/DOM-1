@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">0</h1>
+    <input type="number" id="k" placeholder="enter 1 number"/>
+    <input type="number" id="m" placeholder="enter 2 number"/>
+    <button onclick="a()">Add</button>
+    <button onclick="s()">Subtract</button>
+    <button onclick="d()">DIVIDE</button>
+    <button onclick="m()">Multiply</button>
+    
+</body>
+</html>
+<script>
+function a(){
+sum= Number(document.getElementById("k").value) + Number(document.getElementById("m").value)
+document.getElementById("h1").innerHTML=sum
+}
+function s(){
+sum= Number(document.getElementById("k").value) - Number(document.getElementById("m").value)
+document.getElementById("h1").innerHTML=sum
+}
+function d(){
+sum= Number(document.getElementById("k").value) / Number(document.getElementById("m").value)
+document.getElementById("h1").innerHTML=sum
+}
+function m(){
+sum= Number(document.getElementById("k").value) * Number(document.getElementById("m").value)
+document.getElementById("h1").innerHTML=sum
+}
+</script>
